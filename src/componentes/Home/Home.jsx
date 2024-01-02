@@ -6,20 +6,17 @@ import Contacto from './Contacto'
 import Nosotros from './Nosotros'
 
 const Home = () => {
-  const [isTrue, setIsTrue] = useState(false);
+  // const [isTrue, setIsTrue] = useState(false);
 
-  const handleClickEventHome = () => {
-    if (isTrue) {
-      setIsTrue(false)
-    } else if (!isTrue) {
-      setIsTrue(true)
-    }
-  }
+  // const handleClickEventHome = () => {
+  //   if (isTrue) {
+  //     setIsTrue(false)
+  //   } else if (!isTrue) {
+  //     setIsTrue(true)
+  //   }
+  // }
 
   return (
-    <div>
-      <Header handleClickEventHome={handleClickEventHome} />
-
 
       <>
         <Nosotros />
@@ -27,7 +24,6 @@ const Home = () => {
         <Contacto />
       </>
 
-    </div>
   )
 }
 

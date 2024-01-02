@@ -1,0 +1,43 @@
+.buscador {
+    margin: 10px;
+    /* width: 70%; */
+}
+
+.buscador>.input-nombre {
+    width: 50%;
+    /* height: 30px; */
+    margin-left: 5px;
+}
+
+.contenedor-pacientes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.cont-button {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+}
+
+.card {
+    /* width: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+}
+
+.card>p {
+    font-size: 14px;
+}

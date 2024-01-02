@@ -16,6 +16,7 @@
 .justify-space-around{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* .navbar-nav {
@@ -54,7 +55,7 @@
 /*MEDICO*/
 
 .doctor-card {
-    width: 20%;
+    min-width: 20%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
     border: #375b79 solid 1px;
     border-radius: 10px;
     padding: 5px;
-    margin: 2% 5%;
+    margin: 3% 5%;
     box-shadow: 1px 1px 4px #222a2d;
 }
 
