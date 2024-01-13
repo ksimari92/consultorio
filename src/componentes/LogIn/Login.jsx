@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useStore } from '../../store';
 import { useAuth } from '../../store';
-// import './Login.css';
+import './Login.css';
 import Success from './Succes';
 import Error from './Error';
 
@@ -52,15 +52,15 @@ const Login = () => {
       {isLogged ? (
         <Success />
       ) : (
-        <>
-          <h1>Bienvenido</h1>
+        <div className='login'>
+          <h1 className='titulo-bienvenida'>Bienvenido</h1>
           <form action="" className='form-group mt-5 mb-3' onSubmit={validarDatos}>
             <input type="text" placeholder='Usuario' className='form-control mb-3' onChange={handleChangeInputEmail} />
             <input type="password" placeholder='Ingrese su clave' className='form-control mb-3' onChange={handleChangeInputPass} />
             <input type="submit" value="Iniciar sesión" className='btn btn-primary mb-5' />
           </form>
           {loginError && <Error />}
-        </>
+        </div>
       )}
     </>
   );
